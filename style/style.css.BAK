@@ -1,0 +1,551 @@
+/*                               Eléments principaux de la page */
+*{
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    
+}
+body{
+    margin: 0;
+    padding: 0;
+    max-width: 1470px;
+    min-width: 400px;
+    margin:auto;
+}
+p, header{
+    color: #0065FC;
+    font-size: 1em;
+}
+p{
+    color:#606060;
+}
+a{                
+    text-decoration: none;
+    color: #0065FC;
+}
+#bloc_page{
+    width:95%;
+    margin:auto;
+    margin-bottom:20px;
+}
+/*                               Header */
+header{
+    margin-top: 2px;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;       
+}
+header nav{
+    position: absolute;
+    right: 100px;
+    bottom: 20px;         
+}
+header nav a:hover{
+    border-top : 2px solid #0065FC;
+}
+header nav a{
+    padding: 20px;
+    font-weight: normal;   
+}
+header a{
+    padding: 20px;
+    font-weight: bold;
+}
+
+/*                               section filtre */
+#search{
+    display: flex;
+    flex-direction: column;        
+}
+#title-search{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 0px;
+    flex-wrap: wrap;
+}
+h1{
+    font-size: 1.38em;
+    font-weight:bolder;
+    color: black;
+    font-weight:bold;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+#search-bar{
+    width: 440px;
+    height: 50px;
+    border-style: solid;     
+    border-width: 1px;
+    border-radius: 13px;
+    border-color: #F2F2F2;
+}
+#search-bar i{
+    background-color: #F2F2F2;
+    padding: 16px 0 0 18px;
+    border-radius: 10px 0 0 10px;
+    width: 48px;
+    height: 50px;    
+}
+#search-bar button i{
+    display: none;
+}
+#site-search{
+    width: 240px;
+    height: 38px;
+    border-style: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding-left: 20px;
+}
+button{
+    width: 141px;
+    height: 48px;
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 13px 13px 0;
+    font-size: 1.05em;
+}
+#filters nav{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    position: relative;
+}
+#filters nav p{
+    font-weight: bold;
+    color: black;
+    margin-right: 30px;
+        
+}
+#filters nav button i{
+    width: 45px;
+    height: 45px;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    z-index: 1;   
+    position: absolute; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -28px;
+    top: -2px;    
+}
+#filters nav button{
+    font-size: 1em;
+    background-color: white;
+    color: black;    
+    border-style: solid;
+    border-left: none;
+    border-color: #D9D9D9;
+    border-width: 2px;
+    border-radius: 0 30px 30px 0 ;
+    width: auto;
+    height: 45px;
+    position:relative;
+    margin-left: 50px; 
+    padding: 0 20px 0 30px;   
+}
+#filters nav button:hover{
+    background-color:#D9D9D9;
+}
+#availability{
+    display: inline;
+    position: relative;
+    margin-bottom: 20px;
+}
+#availability i{
+    font-size: 1.4em;
+    position: absolute;
+    top: 14px;
+    color: white;
+    background-color: #0065FC;
+    border-radius: 10px;
+    border-color: #F2F2F2;    
+}
+#availability p{
+    position: absolute;
+    left: 30px;
+}
+/*                               section Articles*/
+#articles{
+    margin-top: 40px;
+    display: flex;         
+}
+/*                               section Articles - Aside */
+#articles-marseille, aside{    
+    padding : 20px 0 20px 40px;
+    background-color: #F2F2F2;
+    border-radius: 20px;         
+}
+aside{
+    min-width: 410px;
+    max-width: 410px;
+}
+aside h2 i{
+    margin-left: 100px;
+}
+aside figure{
+    width: 400px;
+    height: 145px;
+    display: flex;
+    margin-right: 40px;
+}
+aside figure img{
+    height:auto ;
+    width:130px; 
+    object-fit:cover;   
+    border-radius: 15px 0 0 15px;
+}
+aside figcaption{
+    margin-left: 20px;
+    line-height: 1.4em;
+    font-size: 0.9em;
+    padding-left: 8px;
+}
+aside figcaption p{
+    margin-top: -15px;
+}
+aside figcaption i:nth-child(8){
+    color: #D9D9D9;    
+}
+#articles-marseille{
+   margin-right: 40px;   
+}
+/*                               section Articles - Marseille*/
+.vignettes{    
+    margin: -15px 0 0 -40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#articles-marseille a{
+    font-size: 1em;
+    font-weight: bold;
+    color: black;    
+}
+figure{
+    width: 250px;
+    height: 196px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 1em #D9D9D9;
+    padding: 5px;
+    margin-right: 0;
+}
+figure img{
+    height: 110px;
+    width:100%; 
+    object-fit:cover;   
+    border-radius: 15px 15px 0 0;
+}
+figcaption{
+    line-height: 0.2em;
+    font-size: 0.9em;
+    padding-left: 8px;
+}
+figcaption h3{
+    font-size: 1.1em;
+    margin-bottom: 18px;
+}
+figcaption i{
+    margin-right: 1px;
+    font-size: 0.8em;
+    color: #0065FC;    
+}
+figcaption i:nth-child(7){
+    font-size: 0.8em;
+    color: #D9D9D9;    
+}
+/*                               Activities */
+#Activities{
+    margin: 60px 0 60px 0;
+}
+#Activities-list{    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#Activities-list > figure{
+    width: 23%;
+    /*height: auto*/;    
+    padding: 0;
+}
+#Activities-list figure{
+    padding:0;
+    margin:40px 0 0 0;
+}
+#Activities-list figcaption{
+    padding : 5px 0 0 15px;
+}
+
+/*                               Activities Séparations spécifiques au Desktop*/
+@media screen and (min-width: 1150px)
+{     
+    #figvieux, #figparc{
+        height: 445px;        
+    }
+    #figvieux img, #figparc img{
+        height: 390px;        
+    }
+    .coupledefigures{
+        display: flex;
+        width:23%;
+        flex-direction: column;
+    }
+    .coupledefigures figure{
+        width:100%;
+    }
+    #figfort, #figparclong{
+        height: 245px;
+    }
+    #figfort img, #figparclong img{
+        height: 190px;              
+    }
+    #figiles, #fignotre{
+        height: 161px;              
+    } 
+    #figiles img, #fignotre img{
+        height: 105px;              
+    } 
+  
+  
+}
+/*                               footer */
+body > footer{    
+    background-color: #F2F2F2;
+    display: flex;
+    width:100%;
+    padding-left: 2.5%;
+    padding-right:2.5%;
+    justify-content:flex-start ;
+    
+}
+.footer-element{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: black;   
+    padding-right: 18%;  
+}
+.footer-element a{
+    margin-bottom: 12px;
+    color: black;
+}
+/*     Break Point Tablette               */
+@media screen and (max-width: 1150px)
+{
+    /*                              Arcticles Tablette                 */
+    .vignettes{
+        justify-content: center;
+    }
+    #articles{
+        margin-top: 40px;
+        display: flex; 
+        flex-direction: column-reverse;        
+    }
+    #articles-marseille, aside{    
+        padding : 20px 0 10px 20px;
+        border : 0;
+        background-color: #F2F2F2;
+        border-radius: 0;         
+    }
+    aside{
+        min-width: 100%;
+        max-width: none;
+    }
+    #articles-marseille .vignettes figure{
+        width: 400px;
+        height: 195px;
+        padding: 1px;
+        margin-right: 0;
+    }
+    figure img{
+        height: 110px;
+        width:100%; 
+        object-fit:cover;   
+        border-radius: 15px 15px 0 0;
+    }
+    #articles-marseille{    
+        padding : 10px 0 10px 20px;
+        background-color: white;
+        border-radius: 20px;             
+    }
+    /*                              Activités Tablette                 */
+    #Activities{
+        margin : 10px 15px 60px 15px;         
+    }
+    #Activities-list{    
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;        
+    }
+    #Activities-list  figure{
+        width: 70%;
+        height: 160px;         
+    }
+    .coupledefigures{
+        display: flex;
+        width:100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .coupledefigures figure{
+        width:100%;
+    }
+}
+/*     Break Point Mobile               Selon bootstrap :  576   768   */
+@media screen and (max-width: 576px)
+{   
+    #bloc_page{
+        padding : 0;
+        width: 100%;
+    }
+    
+    header{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        flex-wrap: wrap;             
+    }
+    header nav{
+        width: 100%;
+        position: absolute;
+        right: auto;
+        bottom: auto;
+        margin-top: 110px; 
+        display: flex;
+        justify-content: space-around;             
+    }  
+    
+    header nav a{       
+       padding: 10px;
+    }
+    header a{
+        right: 10px;
+    }
+    header img{
+        margin: 20px 50px 20px 20px;
+    }
+    header nav a{
+        width: 50%;
+        border-bottom: #D9D9D9;
+        border-bottom-style: solid;
+        text-align: center;
+    }
+    header nav a:hover{
+        border-top:none;
+        border-bottom: #0065FC;
+        border-bottom-style: solid;
+    }
+    /*                              Search Mobile                 */
+    #search{
+        margin : 40px 0 0 20px;
+    }
+    #search-bar{
+        width: auto;  
+        border: none;      
+    }
+    #site-search{
+        width: auto;         
+        border-top: 1px solid #f2f2f2; 
+        border-bottom: 1px solid #F2F2F2; 
+        height: 48px;
+    }
+    #search-bar i{
+        border-top: 1px solid #f2f2f2; 
+        border-bottom: 1px solid #F2F2F2; 
+        height: 48px;
+    }
+    #search-bar button{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 13px;
+        font-size: 1.05em;
+        background-color: #0065FC;
+        margin-left: -15px;               
+    }
+    #search-bar span {         
+        display: none;             
+    }
+    #search-bar button i{
+        display: block;
+        padding: 0;
+        margin: 0;
+        border: none;
+        width: auto;
+        height: auto;
+        background-color: #0065FC;        
+    }
+
+    #filters nav{
+        display:block;  
+        margin: 0 10px 0 10px;
+
+    }
+    #filters nav button{
+        margin: 0 18px 12px 25px;        
+    }
+    /*                              Arcticles Mobile                 */
+    #articles{
+        margin-top: 40px;
+        display: flex; 
+        flex-direction: column-reverse;        
+    }
+    #articles-marseille, aside{    
+        padding : 20px 0 10px 20px;
+        border : 0;
+        background-color: #F2F2F2;
+        border-radius: 0;         
+    }
+    aside{
+        min-width: 100%;
+        max-width: none;
+    }
+    #articles-marseille .vignettes figure{
+        width: 380px;
+        height: 195px;
+        padding: 1px;
+        margin-right: 10px;
+    }
+    figure img{
+        height: 110px;
+        width:100%; 
+        object-fit:cover;   
+        border-radius: 15px 15px 0 0;
+    }
+    #articles-marseille{    
+        padding : 10px 0 10px 20px;
+        background-color: white;
+        border-radius: 20px;  
+        margin-right: 20px;           
+    }
+    /*                              Activités Mobile                 */
+    #Activities{
+        margin : 10px 15px 60px 15px;         
+    }
+    #Activities-list{    
+        flex-direction: column;        
+    }
+    #Activities-list  figure{
+        width: 95%;
+        height: 160px;         
+    }
+    .coupledefigures{
+        align-items:flex-start ;
+    }
+    /*                              Footer Mobile                 */
+    footer{    
+        display: flex;
+        flex-direction: column;           
+    }
+    .footer-element{
+        margin: 0 0 0 30px;
+        
+    }
+}
