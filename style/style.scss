@@ -2,14 +2,19 @@ body{
     margin: 0;
     padding: 0;
     max-width: 1000px;
-    min-width: 400px;
+    min-width: 350px;
     margin:auto;
 }
-p, h1, h2, h3, a, {
-    font-family: roboto, sans-serif;
+p, h1, h2, h3, a {
+    font-family: Roboto, sans-serif;
     text-decoration: none;
+    padding: 10px;
 }
 
+footer h2{
+    font-family:Shrikhand ;
+    width: 90%;
+}
 img{
     width: 100%;
 }
