@@ -178,12 +178,12 @@ footer i {
   padding-right: 5px;
 }
 
-header {
+#headermenu {
   display: flex;
   justify-content: space-around;
   padding: 10px 0;
 }
-header img {
+#headermenu img {
   width: 50%;
 }
 
@@ -192,20 +192,75 @@ main {
   padding: 0;
   display: flex;
   flex-direction: column;
+  background-color: #f8f8f8;
+}
+main button {
+  width: 50%;
+  margin: 20px 0 0 30%;
+}
+
+.imgmenu {
+  height: 260px;
+  width: auto;
+  object-fit: cover;
 }
 
 #menu {
-  background-color: #f8f8f8;
   margin-top: 0;
+  transform: translateY(-40px);
+  background-color: #f8f8f8;
   border-radius: 40px 40px 0 0;
-  transform: translateY(-30px);
+}
+#menu h2 {
+  font-size: 1em;
+  font-weight: lighter;
+  padding: 0 0 0 20px;
+  margin-bottom: 5px;
+}
+#menu ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+#menu ul li {
+  background-color: white;
+  border-radius: 15px;
+  margin: 0 10px 18px 0;
+  padding: 10px;
+  box-shadow: 1px 5px 18px darkgrey;
+  position: relative;
+}
+#menu ul li p {
+  font-size: 1em;
+  font-weight: lighter;
+}
+#menu ul li > * {
+  margin: 0 0 5px 0;
+  padding: 0;
+}
+#menu ul span {
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.underline {
+  border-top: 2px solid #99E2D0;
+  margin: 0 300px 0 20px;
+  display: block;
+  width: 30px;
 }
 
 main h1 {
   font-family: Shrikhand;
   font-weight: lighter;
   font-size: 1.5em;
-  padding: 15px;
+  padding: 15px 40px 5px 20px;
+}
+main h1 i {
+  transform: translateX(40px);
 }
 
 /*# sourceMappingURL=style.css.map */
