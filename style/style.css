@@ -1,3 +1,23 @@
+@keyframes loader-ohmyfood {
+  0% {
+    font-size: x-small;
+    opacity: 0.3;
+  }
+  100% {
+    font-size: xx-large;
+    opacity: 1;
+  }
+}
+@keyframes loader-container {
+  0% {
+    display: flex;
+  }
+  100% {
+    display: none;
+    height: 0;
+    transform: scale(0);
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -23,6 +43,43 @@ footer h2, header h1 {
 
 img {
   width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#loader-contener {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: loader-container 1s 5s;
+  animation-fill-mode: forwards;
+}
+#loader-contener div {
+  color: white;
+  font-family: Shrikhand;
+}
+#loader-contenerspan {
+  font-size: 1px;
+  animation-fill-mode: forwards;
+}
+#loader-contener span:first-child {
+  animation: loader-ohmyfood 3s;
+}
+#loader-contener span:nth-child(2) {
+  animation: loader-ohmyfood 3s 1s;
+}
+#loader-contener span:last-child {
+  animation: loader-ohmyfood 3s 2s;
 }
 
 header h1 {
@@ -180,11 +237,18 @@ footer i {
 
 #headermenu {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding: 10px 0;
+  position: relative;
 }
 #headermenu img {
   width: 50%;
+}
+#headermenu a {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50px;
 }
 
 main {

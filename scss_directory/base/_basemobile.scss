@@ -1,6 +1,6 @@
 //  ----- Général   -----------
 *{
-    box-sizing: border-box;
+    box-sizing: border-box;    
 }
 body{
     margin: 0;
@@ -20,6 +20,44 @@ footer h2, header h1{
 }
 img{
     width: 100%;
+}
+ul{
+    list-style-type: none;
+}
+
+// loader -------------
+#loader-contener{
+    background-color: rgba($color: #000000, $alpha: 0.6);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: loader-container 1s 5s;
+    animation-fill-mode: forwards;
+    & div{
+        color: white;
+        font-family:Shrikhand;
+    }
+    &span{
+        font-size:1px;
+        animation-fill-mode: forwards;
+    }
+    & span:first-child{
+        animation: loader-ohmyfood 3s;
+    }
+    & span:nth-child(2) {
+        animation: loader-ohmyfood 3s 1s;
+    }
+
+    & span:last-child{
+        animation: loader-ohmyfood 3s 2s;
+    }
 }
 //  -----      Header     -----------
 header h1{
@@ -171,10 +209,17 @@ footer{
 //  -----      Pages des restaurants    -----------
 #headermenu{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding: 10px 0;
+    position: relative;
     & img{
         width: 50%;
+    }
+    & a{
+        position: absolute;
+        top:50%;
+        transform: translateY(-50%);
+        left: 50px;
     }
 } 
 main{
