@@ -4,8 +4,9 @@
     opacity: 0.3;
   }
   100% {
-    font-size: xx-large;
+    font-size: 3em;
     opacity: 1;
+    color: #FF79DA;
   }
 }
 @keyframes loader-container {
@@ -20,6 +21,7 @@
 }
 * {
   box-sizing: border-box;
+  font-family: Roboto, sans-serif;
 }
 
 body {
@@ -30,8 +32,7 @@ body {
   margin: auto;
 }
 
-p, h2, h3, a, span {
-  font-family: Roboto, sans-serif;
+p, h2, h3, a {
   text-decoration: none;
   padding: 10px;
 }
@@ -50,7 +51,7 @@ ul {
 }
 
 #loader-contener {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
   height: 100%;
   width: 100%;
   position: fixed;
@@ -61,12 +62,8 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: loader-container 1s 5s;
+  animation: loader-container 1s 3s;
   animation-fill-mode: forwards;
-}
-#loader-contener div {
-  color: white;
-  font-family: Shrikhand;
 }
 #loader-contenerspan {
   font-size: 1px;
@@ -74,12 +71,15 @@ ul {
 }
 #loader-contener span:first-child {
   animation: loader-ohmyfood 3s;
+  font-family: Shrikhand;
 }
 #loader-contener span:nth-child(2) {
-  animation: loader-ohmyfood 3s 1s;
+  animation: loader-ohmyfood 3s;
+  font-family: Shrikhand;
 }
 #loader-contener span:last-child {
-  animation: loader-ohmyfood 3s 2s;
+  animation: loader-ohmyfood 3s;
+  font-family: Shrikhand;
 }
 
 header h1 {
@@ -147,6 +147,9 @@ button {
   box-shadow: 1px 5px 18px darkgrey;
   border-radius: 20px;
   margin: 0 0 30px 0;
+}
+#Fonc li:hover {
+  background-color: #eeb8e5b0;
 }
 #Fonc span {
   color: white;
@@ -287,27 +290,68 @@ main button {
   margin: 0;
 }
 #menu ul li {
+  display: flex;
   background-color: white;
   border-radius: 15px;
   margin: 0 10px 18px 0;
-  padding: 10px;
   box-shadow: 1px 5px 18px darkgrey;
-  position: relative;
+  overflow: hidden;
 }
 #menu ul li p {
   font-size: 1em;
   font-weight: lighter;
 }
 #menu ul li > * {
-  margin: 0 0 5px 0;
   padding: 0;
 }
+#menu ul li > div:first-child {
+  flex-grow: 1;
+}
+#menu ul li div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+#menu ul li div:not(:last-child) {
+  padding: 15px;
+}
+#menu ul li > div:first-child * {
+  margin: 0;
+  padding: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  /** CSS property that will contain text to a given amount of lines when used in combination with display: -webkit-box. It will end with ellipsis when text-overflow: ellipsis is included.**/
+  -webkit-box-orient: vertical;
+}
 #menu ul span {
-  position: absolute;
-  right: 15px;
-  bottom: 10px;
   font-size: 0.9em;
   font-weight: bold;
+}
+#menu ul div.animated {
+  background-color: #99E2D0;
+  color: white;
+  width: 21%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: -22%;
+  transition: margin-right 1s ease;
+}
+#menu ul div.animated i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 22px;
+  width: 22px;
+  border-radius: 100%;
+  background-color: white;
+  color: #99E2D0;
+}
+#menu ul li:hover div.animated {
+  margin-right: 0;
 }
 
 .underline {
