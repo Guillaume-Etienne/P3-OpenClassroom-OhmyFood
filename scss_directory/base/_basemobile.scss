@@ -123,8 +123,11 @@ button{
         border-radius: 20px;
         margin: 0 0 30px 0;
         &:hover{
-            background-color:#eeb8e5b0;
-        }  
+            background-color:lighten($color: $colorprimary, $amount: 35%);        
+            & i{
+                color: $colorprimary;
+            }
+        }
     }
     & span{
         color: white;
@@ -257,7 +260,8 @@ main{
     & ul{
         display: flex;
         flex-direction: column;
-        margin: 0;                   
+        margin: 10px 0 0 10px;
+        padding: 0;                  
     }
     & ul li{
         display:flex;
@@ -267,7 +271,7 @@ main{
         box-shadow: $shadowbox;
         overflow:hidden;
         & p{
-            font-size: 1em;
+            font-size: 0.9em;
             font-weight: lighter;
         }           
     }
@@ -282,16 +286,16 @@ main{
     & ul li div:nth-child(2) {
         display:flex;
         justify-content: center;
-        align-items: flex-end;
+        align-items: flex-end;        
     }
 
     & ul li div:not(:last-child){
-        padding:15px;
+        padding:10px;
     }
 
     & ul li > div:first-child * {
         margin:0;
-        padding:0;
+        padding:1px;
         text-overflow:ellipsis;
         overflow:hidden;
         display: -webkit-box;
@@ -312,8 +316,8 @@ main{
         display:flex;
         justify-content:center;
         align-items: center;
-        margin-right:-22%;
-        transition:margin-right 1s ease;
+        margin-right:-22%;        
+        transition:margin-right 1s ease;        
     }
 
     & ul div.animated i{
@@ -328,7 +332,7 @@ main{
     }
 
     & ul li:hover div.animated{
-        margin-right:0;
+        margin-right:0;        
     }
 }
 .underline{

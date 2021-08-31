@@ -149,7 +149,10 @@ button {
   margin: 0 0 30px 0;
 }
 #Fonc li:hover {
-  background-color: #eeb8e5b0;
+  background-color: #f2eafb;
+}
+#Fonc li:hover i {
+  color: #9356DC;
 }
 #Fonc span {
   color: white;
@@ -287,7 +290,8 @@ main button {
 #menu ul {
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin: 10px 0 0 10px;
+  padding: 0;
 }
 #menu ul li {
   display: flex;
@@ -298,7 +302,7 @@ main button {
   overflow: hidden;
 }
 #menu ul li p {
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: lighter;
 }
 #menu ul li > * {
@@ -313,11 +317,11 @@ main button {
   align-items: flex-end;
 }
 #menu ul li div:not(:last-child) {
-  padding: 15px;
+  padding: 10px;
 }
 #menu ul li > div:first-child * {
   margin: 0;
-  padding: 0;
+  padding: 1px;
   text-overflow: ellipsis;
   overflow: hidden;
   display: -webkit-box;
