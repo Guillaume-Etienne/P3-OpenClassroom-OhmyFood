@@ -342,7 +342,7 @@ main button {
   justify-content: center;
   align-items: center;
   margin-right: -22%;
-  transition: margin-right 1s ease;
+  transition: margin-right 0.8s ease;
 }
 #menu ul div.animated i {
   display: flex;
@@ -353,9 +353,14 @@ main button {
   border-radius: 100%;
   background-color: white;
   color: #99E2D0;
+  transform: rotate(-360deg);
+  transition: transform 0.7s ease-in-out;
 }
 #menu ul li:hover div.animated {
   margin-right: 0;
+}
+#menu ul li:hover div.animated i {
+  transform: rotate(0deg);
 }
 
 .underline {

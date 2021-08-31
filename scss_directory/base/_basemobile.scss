@@ -316,8 +316,8 @@ main{
         display:flex;
         justify-content:center;
         align-items: center;
-        margin-right:-22%;        
-        transition:margin-right 1s ease;        
+        margin-right:-22%;
+        transition:margin-right 0.8s ease;                
     }
 
     & ul div.animated i{
@@ -329,10 +329,15 @@ main{
         border-radius:100%;
         background-color:white;
         color: $colortertiary;
+        transform: rotate(-360deg);
+        transition: transform 0.7s ease-in-out; 
     }
 
     & ul li:hover div.animated{
-        margin-right:0;        
+        margin-right:0;            
+    }
+    & ul li:hover div.animated i{
+        transform: rotate(0deg);     
     }
 }
 .underline{
