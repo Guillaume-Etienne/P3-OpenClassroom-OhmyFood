@@ -39,7 +39,7 @@ ul{
     justify-content: center;
     align-items: center;
     animation: loader-container 1s 3s;
-    animation-fill-mode:forwards ;    
+    animation-fill-mode:forwards ;    //A priori fonctionne aussi sans ??
     & div{
                 
     }
@@ -52,12 +52,12 @@ ul{
         font-family:Shrikhand;
     }
     & span:nth-child(2) {
-        animation: loader-ohmyfood 3s ;
+        animation: loader-ohmyfood 2s 1s;
         font-family:Shrikhand ;
     }
 
     & span:last-child{
-        animation: loader-ohmyfood 3s ;
+        animation: loader-ohmyfood 1s 2s;
         font-family:Shrikhand;
     }
 }

@@ -2,11 +2,13 @@
   0% {
     font-size: x-small;
     opacity: 0.3;
+    transform: scale(0.1) rotate(360deg);
   }
   100% {
     font-size: 3em;
     opacity: 1;
     color: #FF79DA;
+    transform: scale(1) rotate(0deg);
   }
 }
 @keyframes loader-container {
@@ -84,11 +86,11 @@ ul {
   font-family: Shrikhand;
 }
 #loader-contener span:nth-child(2) {
-  animation: loader-ohmyfood 3s;
+  animation: loader-ohmyfood 2s 1s;
   font-family: Shrikhand;
 }
 #loader-contener span:last-child {
-  animation: loader-ohmyfood 3s;
+  animation: loader-ohmyfood 1s 2s;
   font-family: Shrikhand;
 }
 
