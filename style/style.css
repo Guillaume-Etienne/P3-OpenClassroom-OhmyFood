@@ -19,6 +19,16 @@
     transform: scale(0);
   }
 }
+@keyframes loader-menu {
+  0% {
+    opacity: 0;
+    margin-top: 50px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
 * {
   box-sizing: border-box;
   font-family: Roboto, sans-serif;
@@ -300,6 +310,8 @@ main button {
   margin: 0 10px 18px 0;
   box-shadow: 1px 5px 18px darkgrey;
   overflow: hidden;
+  animation: loader-menu 1.2s;
+  animation-fill-mode: forwards;
 }
 #menu ul li p {
   font-size: 0.9em;
