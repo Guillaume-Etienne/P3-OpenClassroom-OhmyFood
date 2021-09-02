@@ -16,6 +16,22 @@
     figure{
         width: 330px;        
     }
+    //Pages des restaurants
+    #menu{
+        & ul{
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 10px 0 0 10px;
+            padding: 0;
+                               
+        }
+        & ul li{
+            display:flex;
+            background-color: white;
+            border-radius: 15px;
+            margin: 0 10px 18px 0;
+        }
+    }
 }
 
 @media screen and (min-width: 1050px)

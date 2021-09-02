@@ -7,7 +7,7 @@ body{
     margin: 0;
     padding: 0;
     max-width: 768px;
-    min-width: 350px;
+    min-width: 330px;
     margin:auto;
 }
 p, h2, h3, a{
@@ -91,7 +91,7 @@ header h1{
     text-align: center;
     & h2{
         padding: 0 20px 0 20px;
-        font-size: 1,5em;
+        font-size: 1.5em;
         font-weight: bolder;
         margin-top: 40px;
     }
@@ -227,6 +227,7 @@ footer{
     position: relative;
     & img{
         width: 50%;
+        max-width: 200px;
     }
     & a{
         position: absolute;
@@ -314,6 +315,7 @@ main{
     & ul span{              
         font-size: 0.9em;
         font-weight: bold;
+        padding-right: 10px;
     }
 
     & ul div.animated{

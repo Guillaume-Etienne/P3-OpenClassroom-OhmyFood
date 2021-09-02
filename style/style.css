@@ -42,7 +42,7 @@ body {
   margin: 0;
   padding: 0;
   max-width: 768px;
-  min-width: 350px;
+  min-width: 330px;
   margin: auto;
 }
 
@@ -128,7 +128,7 @@ header h1 {
 }
 #intro h2 {
   padding: 0 20px 0 20px;
-  font-size: 1, 5em;
+  font-size: 1.5em;
   font-weight: bolder;
   margin-top: 40px;
 }
@@ -267,6 +267,7 @@ footer i {
 }
 #headermenu img {
   width: 50%;
+  max-width: 200px;
 }
 #headermenu a {
   position: absolute;
@@ -352,6 +353,7 @@ main button {
 #menu ul span {
   font-size: 0.9em;
   font-weight: bold;
+  padding-right: 10px;
 }
 #menu ul div.animated {
   background-color: #99E2D0;
@@ -417,6 +419,19 @@ main h1 i {
 
   figure {
     width: 330px;
+  }
+
+  #menu ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px 0 0 10px;
+    padding: 0;
+  }
+  #menu ul li {
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    margin: 0 10px 18px 0;
   }
 }
 @media screen and (min-width: 1050px) {
