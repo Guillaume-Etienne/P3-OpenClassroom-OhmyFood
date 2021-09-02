@@ -2,13 +2,15 @@
     0%{
         font-size: x-small;
         opacity: 0.3;
-        transform:scale(.1) rotate(360deg);
+        -webkit-transform:rotate(180deg) scale(.1);
+        transform:rotate(180deg) scale(.1)
     }
     100%{
         font-size: 3em;
         opacity: 1;
         color: $colorsecondary;
-        transform:scale(1) rotate(0deg);
+        -webkit-transform:rotate(0deg) scale(1);
+        transform:rotate(0deg) scale(1);
     }
 }
 

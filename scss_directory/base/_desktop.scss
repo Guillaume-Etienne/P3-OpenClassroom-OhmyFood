@@ -1,0 +1,32 @@
+@media screen and (min-width: 768px)
+{     
+    body{
+        max-width: 1580px;        
+    }    
+    #Fonc li{
+        //width: 30%;
+        min-width: 300px;
+        margin-right: 30px;
+    }
+    #Rest_desktop{
+        display: flex;
+        flex-wrap: wrap; 
+
+    }
+    figure{
+        width: 330px;        
+    }
+}
+
+@media screen and (min-width: 1050px)
+{ 
+    #Fonc ul{
+        display: flex;
+        flex-direction: row;        
+    }
+    #Fonc li{
+        width: 30%;
+        min-width: 300px;
+        margin-right: 30px;
+    }
+}
